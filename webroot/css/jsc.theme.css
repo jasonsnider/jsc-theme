@@ -1,0 +1,289 @@
+body {
+    min-height: 2000px;
+    padding-top: 50px;
+}
+
+h1{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+pre{
+	box-shadow: none;
+}
+
+.header{
+    margin: 0 0 10px;
+}
+
+.header h1{
+    padding: 0;
+    margin: 0;
+}
+
+.header small{}
+
+.form-group-radio-inline input,
+.form-group-checkbox-inline input{
+    margin: 0 4px;
+}
+
+/* We don't want search results getting all 
+ * whacky with different sizes of font 
+ */
+.well-result *{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.well-trans{
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.well-result *{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.well-trans{
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+a.anchor{
+    display: block; 
+    position: relative; 
+    top: -70px; 
+    visibility: hidden;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+.divider{
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+
+/* Sidebar navigation */
+.sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 20px 40px;
+    overflow-x: hidden;
+    overflow-y: auto; 
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        padding: 20px;
+    }
+    .inner-nav{
+        list-style: none;
+        padding: 0 0 0 40px;
+        font-size: 93%;
+    }
+
+    .inner-nav li .inner-nav{
+        padding: 0 0 0 20px;
+    }
+}
+
+.nav-sidebar {
+    margin-right: -21px; /* 20px padding + 1px border */
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+.nav-sidebar > li > a {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.nav-sidebar > .active > a {
+  color: #fff;
+  background-color: #428bca;
+}
+
+/* Main Display */
+.main {
+  padding: 20px;
+}
+
+.main .page-header {
+    margin-top: 0;
+}
+
+
+@media (min-width: 768px) {
+    .main {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+
+/* Footer */
+div.footer{
+    color: #7F7F7F;
+    font-size: 0.9em;
+    border-top: 1px solid #f5f5f5;
+    margin-top: 10px;
+    padding: 8px 0;
+}
+
+div.footer a,
+div.footer a:link,
+div.footer a:visited,
+div.footer a:hover{
+    color: #7F7F7F;
+    font-weight: bold;
+}
+
+/* Error Messages */
+.error-message{
+    color: #b94a48;
+}
+
+.error label{
+    color: #b94a48;
+}
+
+.error input,
+.error textarea,
+.error select{
+    border: 1px solid #b94a48;
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+    .row-offcanvas {
+        position: relative;
+        -webkit-transition: all .25s ease-out;
+           -moz-transition: all .25s ease-out;
+                transition: all .25s ease-out;
+    }
+
+    .row-offcanvas-right {
+        right: 0;
+    }
+
+    .row-offcanvas-left {
+        left: 0;
+    }
+
+    .row-offcanvas-right
+    .sidebar-offcanvas {
+        right: -50%; /* 6 columns */
+    }
+
+    .row-offcanvas-left
+    .sidebar-offcanvas {
+        left: -50%; /* 6 columns */
+    }
+
+    .row-offcanvas-right.active {
+        right: 50%; /* 6 columns */
+    }
+
+    .row-offcanvas-left.active {
+        left: 50%; /* 6 columns */
+    }
+
+    .sidebar-offcanvas {
+        position: absolute;
+        top: 0;
+        width: 50%; /* 6 columns */
+    }
+    
+}
+
+.sidebar-offcanvas .panel .panel-heading a{
+    color: #2a6496;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+    font-weight: normal;
+}
+
+.sidebar-offcanvas .panel .nav-list{
+    margin: 0;
+    padding:0;
+}
+
+.sidebar-offcanvas .panel .nav-list li a{
+    color: #2a6496;
+    font-weight: normal;
+}
+
+.sidebar-offcanvas .panel .nav-list li a:hover,
+.sidebar-offcanvas .panel .panel-heading a:hover{
+    color: #333;
+    background: none;
+    text-decoration: none;
+}
+    
+
+button.navbar-toggle{
+	color: #999;
+	background: #444;
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+    .row-offcanvas {
+        position: relative;
+        -webkit-transition: all .25s ease-out;
+           -moz-transition: all .25s ease-out;
+                transition: all .25s ease-out;
+    }
+
+    .row-offcanvas-right {
+        right: 0;
+    }
+
+    .row-offcanvas-left {
+        left: 0;
+    }
+
+    .row-offcanvas-right
+    .sidebar-offcanvas {
+        right: -84%; /* 10 columns */
+    }
+
+    .row-offcanvas-left
+    .sidebar-offcanvas {
+        left: -84%; /* 10 columns */
+    }
+
+    .row-offcanvas-right.active {
+        right: 84%; /* 10 columns */
+    }
+
+    .row-offcanvas-left.active {
+        left: 84%; /* 10 columns */
+    }
+
+    .sidebar-offcanvas {
+        position: absolute;
+        top: 0;
+        width: 84%; /* 10 columns */
+    }
+}
+
