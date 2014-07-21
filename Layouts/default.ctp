@@ -70,16 +70,10 @@
 				endif; 
 			?>
 			</div>
-        </div>
+        </div>        
         <?php echo $this->Html->script('//code.jquery.com/jquery-1.11.0.min.js'); ?>
-        <?php echo $this->Html->script('//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'); ?>
-		<?php echo $this->Html->script('/vendors/bootstrap-datepicker/js/bootstrap-datepicker'); ?>
+        <?php echo $this->Html->script('//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'); ?>		
 		<?php echo $this->Html->script('jsc'); ?>
         <?php echo $this->element('tinymce'); ?>
-		<script>
-			$(function() {
-				$('input.datepicker').datepicker();
-			});
-		</script>
     </body>
 </html>
